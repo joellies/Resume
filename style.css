@@ -3,15 +3,16 @@ body {
   height: auto;
   font-size: 15px;
   font-family: 'Montserrat', sans serif;
+  font-weight: 300;
 }
 
 header {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
 }
 
 nav {
-  margin: 20px;
+  margin: 10px;
   padding: 10px;
   margin-top: auto;
   margin-bottom: auto;
@@ -30,13 +31,14 @@ nav {
 #main-container {
   width: 100%;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
 }
 
 .profile-left {
   display: grid;
   grid-row: 2;
   grid-column: 1;
+  background-color: #fff5e4;
 }
 
 .profile-right {
@@ -46,9 +48,8 @@ nav {
 }
 
 div {
-  border: 1px solid black;
-  margin: 20px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
 }
 
 h3,
@@ -62,23 +63,45 @@ ul {
   list-style-type: none;
 }
 
-article,
-li,
-td {
+article {
   line-height: 1.5em;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+}
+
+td,
+th {
+  width: 33%;
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+}
+
+tr {
+  height: 20px;
 }
 
 a {
   color: #368a5e;
   text-decoration: none;
 }
+
 a:hover {
   color: #bf7067;
   text-decoration: underline;
 }
 
-h3 {
-  border: 1px solid #368a5e;
+h3,
+h4 {
+  border: 2px solid #368a5e;
+  width: fit-content;
+  margin: 10px;
+}
+
+.important {
+  color: #bf7067;
+  font-weight: 500;
 }
 
 footer {
